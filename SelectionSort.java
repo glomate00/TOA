@@ -1,6 +1,6 @@
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] data = {47, 50, 61, 41, 53, 12, 68, 63, 3};
+        int[] data = {69, 52, 97, 27, 10, 88,29, 1, 24};
 
         System.out.println("Unsorted array:");
         for (int n : data) {
