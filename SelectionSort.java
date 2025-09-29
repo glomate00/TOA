@@ -1,16 +1,16 @@
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] data = {69, 52, 97, 27, 10, 88,29, 1, 24};
+        int[] data = {69, 52, 97, 27, 10, 88, 29, 1, 24};
 
         System.out.println("Unsorted array:");
         for (int n : data) {
             System.out.print(n + " ");
         }
-        System.out.println();
+        System.out.println("\n");
 
         selectionSort(data);
 
-        System.out.println("Sorted array:");
+        System.out.println("\nSorted array:");
         for (int n : data) {
             System.out.print(n + " ");
         }
@@ -28,6 +28,15 @@ public class SelectionSort {
             int tmp = nums[i];
             nums[i] = nums[minPos];
             nums[minPos] = tmp;
+
+            for (int k = 0; k <= i; k++) {
+                System.out.print(nums[k] + " ");
+            }
+            System.out.print("| ");
+            for (int k = i + 1; k < nums.length; k++) {
+                System.out.print(nums[k] + " ");
+            }
+            System.out.println();
         }
     }
 }
