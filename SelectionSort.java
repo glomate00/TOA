@@ -6,7 +6,6 @@ public class SelectionSort {
         for (int n : data) {
             System.out.print(n + " ");
         }
-        System.out.println("\n");
 
         selectionSort(data);
 
@@ -28,15 +27,6 @@ public class SelectionSort {
             int tmp = nums[i];
             nums[i] = nums[minPos];
             nums[minPos] = tmp;
-
-            for (int k = 0; k <= i; k++) {
-                System.out.print(nums[k] + " ");
-            }
-            System.out.print("| ");
-            for (int k = i + 1; k < nums.length; k++) {
-                System.out.print(nums[k] + " ");
-            }
-            System.out.println();
         }
     }
 }
